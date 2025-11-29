@@ -1,0 +1,98 @@
+[
+  {
+    "id": "E001",
+    "name": "India Gate Marathon",
+    "type": "sports",
+    "expected_crowd": 25000,
+    "status": "upcoming",
+    "date": "2024-12-15",
+    "time": "06:00",
+    "location": {
+      "lat": 28.6129,
+      "lng": 77.2295,
+      "venue": "India Gate"
+    },
+    "risk_level": "medium",
+    "nearby_hospitals": ["H001", "H003"]
+  },
+  {
+    "id": "E002",
+    "name": "Diwali Mela",
+    "type": "festival",
+    "expected_crowd": 100000,
+    "status": "upcoming",
+    "date": "2024-11-01",
+    "time": "16:00",
+    "location": {
+      "lat": 28.6295,
+      "lng": 77.2212,
+      "venue": "Red Fort Grounds"
+    },
+    "risk_level": "high",
+    "nearby_hospitals": ["H001", "H004", "H007"]
+  },
+  {
+    "id": "E003",
+    "name": "Tech Conference 2024",
+    "type": "corporate",
+    "expected_crowd": 5000,
+    "status": "ongoing",
+    "date": "2024-10-20",
+    "time": "09:00",
+    "location": {
+      "lat": 28.5494,
+      "lng": 77.2509,
+      "venue": "Pragati Maidan"
+    },
+    "risk_level": "low",
+    "nearby_hospitals": ["H002", "H005"]
+  },
+  {
+    "id": "E004",
+    "name": "Republic Day Parade",
+    "type": "national",
+    "expected_crowd": 150000,
+    "status": "upcoming",
+    "date": "2025-01-26",
+    "time": "09:00",
+    "location": {
+      "lat": 28.6139,
+      "lng": 77.2295,
+      "venue": "Rajpath"
+    },
+    "risk_level": "high",
+    "nearby_hospitals": ["H001", "H003", "H008"]
+  },
+  {
+    "id": "E005",
+    "name": "Cricket Match - India vs Australia",
+    "type": "sports",
+    "expected_crowd": 45000,
+    "status": "upcoming",
+    "date": "2024-11-10",
+    "time": "14:00",
+    "location": {
+      "lat": 28.6369,
+      "lng": 77.2431,
+      "venue": "Feroz Shah Kotla Stadium"
+    },
+    "risk_level": "medium",
+    "nearby_hospitals": ["H001", "H004"]
+  },
+  {
+    "id": "E006",
+    "name": "Music Concert - Arijit Singh",
+    "type": "entertainment",
+    "expected_crowd": 30000,
+    "status": "upcoming",
+    "date": "2024-11-05",
+    "time": "18:00",
+    "location": {
+      "lat": 28.5921,
+      "lng": 77.0460,
+      "venue": "JLN Stadium"
+    },
+    "risk_level": "medium",
+    "nearby_hospitals": ["H005", "H006"]
+  }
+]

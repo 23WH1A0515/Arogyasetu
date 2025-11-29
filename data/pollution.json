@@ -1,0 +1,104 @@
+{
+  "timestamp": "2024-10-28T10:00:00",
+  "source": "Central Pollution Control Board",
+  "average_aqi": 185,
+  "category": "Unhealthy",
+  "dominant_pollutant": "PM2.5",
+  "zones": [
+    {
+      "zone_id": "Z001",
+      "name": "Central Delhi",
+      "aqi": 175,
+      "pm25": 95.5,
+      "pm10": 180.2,
+      "no2": 45.3,
+      "so2": 12.1,
+      "co": 1.2,
+      "o3": 35.6,
+      "category": "Unhealthy",
+      "health_advisory": "Sensitive groups should reduce outdoor activities",
+      "location": {
+        "lat": 28.6304,
+        "lng": 77.2177
+      },
+      "nearby_hospitals": ["H001", "H008"]
+    },
+    {
+      "zone_id": "Z002",
+      "name": "South Delhi",
+      "aqi": 145,
+      "pm25": 72.3,
+      "pm10": 145.8,
+      "no2": 38.2,
+      "so2": 10.5,
+      "co": 0.9,
+      "o3": 42.1,
+      "category": "Unhealthy for Sensitive Groups",
+      "health_advisory": "Active children and adults should limit prolonged outdoor exertion",
+      "location": {
+        "lat": 28.5494,
+        "lng": 77.2001
+      },
+      "nearby_hospitals": ["H002", "H005", "H006"]
+    },
+    {
+      "zone_id": "Z003",
+      "name": "East Delhi",
+      "aqi": 210,
+      "pm25": 125.8,
+      "pm10": 220.5,
+      "no2": 52.7,
+      "so2": 15.3,
+      "co": 1.5,
+      "o3": 28.9,
+      "category": "Very Unhealthy",
+      "health_advisory": "Everyone should reduce outdoor activities",
+      "location": {
+        "lat": 28.6869,
+        "lng": 77.3102
+      },
+      "nearby_hospitals": ["H004", "H007"]
+    },
+    {
+      "zone_id": "Z004",
+      "name": "North Delhi",
+      "aqi": 165,
+      "pm25": 85.2,
+      "pm10": 165.3,
+      "no2": 42.1,
+      "so2": 11.8,
+      "co": 1.1,
+      "o3": 38.4,
+      "category": "Unhealthy",
+      "health_advisory": "Sensitive groups should reduce outdoor activities",
+      "location": {
+        "lat": 28.7041,
+        "lng": 77.1025
+      },
+      "nearby_hospitals": ["H007"]
+    },
+    {
+      "zone_id": "Z005",
+      "name": "West Delhi",
+      "aqi": 155,
+      "pm25": 78.9,
+      "pm10": 155.7,
+      "no2": 40.5,
+      "so2": 11.2,
+      "co": 1.0,
+      "o3": 40.2,
+      "category": "Unhealthy",
+      "health_advisory": "Sensitive groups should reduce outdoor activities",
+      "location": {
+        "lat": 28.6517,
+        "lng": 77.0535
+      },
+      "nearby_hospitals": ["H008"]
+    }
+  ],
+  "forecast": {
+    "next_24h": "AQI expected to remain in Unhealthy range",
+    "next_48h": "Slight improvement expected with wind speed increase",
+    "advisory": "Avoid outdoor activities during morning and evening rush hours"
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "H001",
+    "name": "City General Hospital",
+    "type": "government",
+    "capacity": 500,
+    "current_patients": 425,
+    "icu_beds": 50,
+    "icu_occupied": 42,
+    "ventilators": 30,
+    "ventilators_in_use": 22,
+    "specialties": ["Emergency", "Cardiology", "Neurology", "Orthopedics"],
+    "location": {
+      "lat": 28.6139,
+      "lng": 77.2090,
+      "address": "Connaught Place, New Delhi"
+    },
+    "contact": "+91-11-2345-6789"
+  },
+  {
+    "id": "H002",
+    "name": "Apollo Medical Center",
+    "type": "private",
+    "capacity": 350,
+    "current_patients": 180,
+    "icu_beds": 40,
+    "icu_occupied": 15,
+    "ventilators": 25,
+    "ventilators_in_use": 8,
+    "specialties": ["Cardiology", "Oncology", "Transplant"],
+    "location": {
+      "lat": 28.5672,
+      "lng": 77.2100,
+      "address": "Sarita Vihar, New Delhi"
+    },
+    "contact": "+91-11-2345-1234"
+  },
+  {
+    "id": "H003",
+    "name": "AIIMS Hospital",
+    "type": "government",
+    "capacity": 800,
+    "current_patients": 720,
+    "icu_beds": 100,
+    "icu_occupied": 88,
+    "ventilators": 60,
+    "ventilators_in_use": 52,
+    "specialties": ["All Specialties", "Research", "Trauma"],
+    "location": {
+      "lat": 28.5672,
+      "lng": 77.2100,
+      "address": "Ansari Nagar, New Delhi"
+    },
+    "contact": "+91-11-2658-8500"
+  },
+  {
+    "id": "H004",
+    "name": "Max Super Specialty",
+    "type": "private",
+    "capacity": 400,
+    "current_patients": 280,
+    "icu_beds": 45,
+    "icu_occupied": 30,
+    "ventilators": 28,
+    "ventilators_in_use": 18,
+    "specialties": ["Cardiac Surgery", "Neuro Surgery", "Oncology"],
+    "location": {
+      "lat": 28.6304,
+      "lng": 77.2177,
+      "address": "Patparganj, East Delhi"
+    },
+    "contact": "+91-11-4055-4055"
+  },
+  {
+    "id": "H005",
+    "name": "Safdarjung Hospital",
+    "type": "government",
+    "capacity": 600,
+    "current_patients": 540,
+    "icu_beds": 60,
+    "icu_occupied": 55,
+    "ventilators": 40,
+    "ventilators_in_use": 35,
+    "specialties": ["Emergency", "Burns", "Trauma", "Pediatrics"],
+    "location": {
+      "lat": 28.5679,
+      "lng": 77.2067,
+      "address": "Ring Road, New Delhi"
+    },
+    "contact": "+91-11-2616-5060"
+  },
+  {
+    "id": "H006",
+    "name": "Fortis Heart Institute",
+    "type": "private",
+    "capacity": 250,
+    "current_patients": 120,
+    "icu_beds": 35,
+    "icu_occupied": 12,
+    "ventilators": 20,
+    "ventilators_in_use": 7,
+    "specialties": ["Cardiology", "Cardiac Surgery", "Vascular Surgery"],
+    "location": {
+      "lat": 28.5494,
+      "lng": 77.2001,
+      "address": "Okhla, South Delhi"
+    },
+    "contact": "+91-11-4713-5000"
+  },
+  {
+    "id": "H007",
+    "name": "GTB Hospital",
+    "type": "government",
+    "capacity": 450,
+    "current_patients": 410,
+    "icu_beds": 50,
+    "icu_occupied": 48,
+    "ventilators": 30,
+    "ventilators_in_use": 28,
+    "specialties": ["Emergency", "General Medicine", "Surgery"],
+    "location": {
+      "lat": 28.6869,
+      "lng": 77.3102,
+      "address": "Dilshad Garden, East Delhi"
+    },
+    "contact": "+91-11-2214-3000"
+  },
+  {
+    "id": "H008",
+    "name": "Sir Ganga Ram Hospital",
+    "type": "private",
+    "capacity": 675,
+    "current_patients": 380,
+    "icu_beds": 80,
+    "icu_occupied": 45,
+    "ventilators": 50,
+    "ventilators_in_use": 25,
+    "specialties": ["Liver Transplant", "Kidney Transplant", "Oncology", "Neurology"],
+    "location": {
+      "lat": 28.6406,
+      "lng": 77.1909,
+      "address": "Rajinder Nagar, Central Delhi"
+    },
+    "contact": "+91-11-2575-0000"
+  }
+]

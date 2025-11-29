@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArogyaSetu - AI Surge Predictor & Hospital Load Balancer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <h1>ArogyaSetu</h1>
+                <span class="tagline">Citywide AI Surge Predictor</span>
+            </div>
+            <div class="header-actions">
+                <button id="refreshBtn" class="btn btn-primary">
+                    <span class="btn-icon">🔄</span> Refresh Data
+                </button>
+                <button id="balanceBtn" class="btn btn-secondary">
+                    <span class="btn-icon">⚖️</span> Show Balance
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="map-section">
+            <div id="map"></div>
+            <div class="map-legend">
+                <h4>Hospital Load Status</h4>
+                <div class="legend-item">
+                    <span class="legend-color critical"></span> Critical (>90%)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color high"></span> High (70-90%)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color medium"></span> Medium (50-70%)
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color low"></span> Low (<50%)
+                </div>
+            </div>
+        </div>
+
+        <div class="panels-section">
+            <div class="panel recommendations-panel">
+                <div class="panel-header">
+                    <h2>🤖 AI Recommendations</h2>
+                    <span class="panel-badge" id="alertCount">0</span>
+                </div>
+                <div class="panel-content" id="recommendationsContent">
+                    <div class="loading">Click "Show Balance" to get AI recommendations</div>
+                </div>
+            </div>
+
+            <div class="panel hospitals-panel">
+                <div class="panel-header">
+                    <h2>🏥 Hospital Status</h2>
+                    <span class="panel-badge" id="hospitalCount">0</span>
+                </div>
+                <div class="panel-content" id="hospitalsContent">
+                    <div class="loading">Loading hospitals...</div>
+                </div>
+            </div>
+
+            <div class="panel summary-panel">
+                <div class="panel-header">
+                    <h2>📊 City Summary</h2>
+                </div>
+                <div class="panel-content" id="summaryContent">
+                    <div class="loading">Loading summary...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>ArogyaSetu - Powered by AI | Last Updated: <span id="lastUpdated">Never</span></p>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p>Analyzing hospital data...</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>
