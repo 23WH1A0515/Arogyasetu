@@ -1,72 +1,86 @@
-# ArogyaSetu - Citywide AI Surge Predictor & Hospital Load Balancer
+# ArogyaSetu
 
-A real-time healthcare management system that predicts hospital surges and optimizes patient distribution across city hospitals using AI-powered analytics.
+ArogyaSetu is a city-level healthcare surge monitoring system designed to help hospitals prepare for sudden increases in patient load.  
+It focuses on prediction, visibility, and smarter resource coordination across multiple hospitals.
 
-## Features
+---
 
-- **AI Surge Prediction**: Analyzes pollution levels, upcoming events, and patient inflow patterns to predict hospital surges (0-100% intensity)
-- **Load Balancing**: Identifies overloaded (>85%) and underutilized (<60%) hospitals with automated transfer recommendations
-- **Interactive Map Dashboard**: Leaflet.js-powered visualization with color-coded hospital status and surge heatmaps
-- **Real-time Monitoring**: Live updates on hospital capacity, ICU beds, and ventilator availability
-- **Smart Recommendations**: AI-generated action items for hospital administrators
+## 🩺 The Problem
 
-## Project Structure
+Hospitals often experience unexpected patient surges due to:
 
-```
-/backend
-    main.py          # FastAPI application entry point
-    predictor.py     # Surge Prediction Agent
-    load_balancer.py # Load Balancing Agent  
-    data_loader.py   # JSON data loading utilities
-    agent.py         # Unified agent interface
-    db_init.py       # SQLite database initialization
+- Festivals and public gatherings  
+- Pollution spikes  
+- Seasonal outbreaks  
+- Epidemic situations  
 
-/frontend
-    index.html       # Main dashboard page
-    styles.css       # Styling
-    dashboard.js     # Frontend logic
+This leads to overcrowding, long wait times, uneven resource distribution, and staff fatigue.
 
-/data
-    hospitals.json   # Hospital information
-    events.json      # Upcoming events data
-    pollution.json   # Air quality data
-    mock_inflow.json # Patient inflow records
-```
+Most responses are reactive — action is taken only after hospitals are already overwhelmed.
 
-## API Endpoints
+---
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Serve the dashboard |
-| `/hospitals` | GET | Get all hospital data |
-| `/surge` | GET | Get surge predictions |
-| `/balance` | GET | Get load balancing recommendations |
-| `/history` | GET | Get last 200 inflow records |
-| `/health` | GET | Health check |
+## 💡 The Approach
 
-## AI Agents
+ArogyaSetu provides a centralized dashboard that:
 
-### Surge Prediction Agent
-- Loads pollution, event data, patient inflow, and hospital load
-- Computes surge intensity per hospital (0-100%)
-- Uses LLM via GROQ API if available, falls back to rule-based predictions
+- Monitors hospital capacity in real time  
+- Predicts potential patient surges  
+- Highlights high-risk zones  
+- Suggests basic load balancing strategies  
+- Tracks staff workload trends  
 
-### Load Balancing Agent
-- Detects overloaded hospitals (>85% capacity)
-- Identifies underutilized hospitals (<60% capacity)
-- Recommends optimal patient transfers
+Instead of managing hospitals individually, it views the city’s healthcare system as one connected network.
 
-## Environment Variables (Optional)
+---
 
-- `GROQ_API_KEY`: For LLM-powered surge predictions
-- `OPENAI_API_KEY`: Alternative LLM provider
+## 📊 Key Features
 
-## Running the Application
+- City-wide hospital load heatmap  
+- Surge prediction indicators  
+- Bed and resource availability tracking  
+- Staff workload monitoring  
+- Simple recommendation engine for administrators  
 
-The application runs automatically when you click "Run" in Replit.
+---
 
-## Technologies
+## 🛠 Tech Stack
 
-- **Backend**: Python, FastAPI, SQLAlchemy, SQLite
-- **Frontend**: HTML5, CSS3, JavaScript, Leaflet.js
-- **AI**: Rule-based analytics with optional LLM integration
+**Frontend:**  
+- React.js  
+- Chart & Map visualization libraries  
+
+**Backend:**  
+- Node.js / Flask  
+- REST APIs  
+
+**Data & Logic:**  
+- Simulated hospital datasets  
+- Weather & pollution APIs  
+- Time-series forecasting  
+- Risk scoring model  
+
+---
+
+## 🚀 Project Scope
+
+Current version:
+- Prototype using simulated data  
+- Demonstrates predictive monitoring and coordination logic  
+
+Future improvements:
+- Real-time hospital integration  
+- Ambulance routing optimization  
+- Integration with public health systems  
+
+---
+
+## 🎯 Objective
+
+To explore how AI-driven insights and centralized monitoring can improve preparedness, reduce overcrowding, and support better healthcare coordination at the city level.
+
+---
+
+## One-Line Summary
+
+ArogyaSetu is a practical, AI-assisted dashboard that helps cities anticipate healthcare surges and manage hospital resources more effectively.
